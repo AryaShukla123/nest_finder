@@ -54,7 +54,7 @@ export default function NewProjects() {
             href="#"
             className="text-sm font-semibold text-primary flex items-center gap-1.5 hover:gap-2.5 transition-all whitespace-nowrap"
           >
-            View all <IconArrowRight />
+            View all <IconArrowRight className="w-4 h-4" />
           </a>
         </div>
 
@@ -73,17 +73,17 @@ export default function NewProjects() {
                 </span>
                 <h3 className="text-[17px] font-bold text-ink mb-1">{p.name}</h3>
                 <p className="text-[13px] text-muted mb-3 flex items-center gap-1.5">
-                  <IconBuilding /> {p.developer}
+                  <IconBuilding className="w-3.5 h-3.5 flex-shrink-0" /> {p.developer}
                 </p>
                 <div className="flex gap-4 flex-wrap mb-4">
                   <span className="flex items-center gap-1.5 text-[13px] text-text">
-                    <IconLocation className="text-primary" /> {p.location}
+                    <IconLocation className="text-primary w-3.5 h-3.5 flex-shrink-0" /> {p.location}
                   </span>
                   <span className="flex items-center gap-1.5 text-[13px] text-text">
-                    <IconHome className="text-primary" /> {p.configs}
+                    <IconHome className="text-primary w-3.5 h-3.5 flex-shrink-0" /> {p.configs}
                   </span>
                   <span className="flex items-center gap-1.5 text-[13px] text-text">
-                    <IconCalendar className="text-primary" /> Possession: {p.possession}
+                    <IconCalendar className="text-primary w-3.5 h-3.5 flex-shrink-0" /> Possession: {p.possession}
                   </span>
                 </div>
                 <div className="flex items-center justify-between pt-3.5 border-t border-border mt-auto">
