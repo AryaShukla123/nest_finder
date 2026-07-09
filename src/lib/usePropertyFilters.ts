@@ -4,9 +4,9 @@ import { useMemo, useState } from "react";
 import { Property, PropertyFilters, SortOption } from "@/types/property";
 
 const DEFAULT_FILTERS: PropertyFilters = {
-  cities: ["Lucknow"],
-  types: ["Apartment"],
-  bhk: ["1", "2", "3", "4"],
+  cities: [],
+  types: [],
+  bhk: ["1", "2", "3", "4", "4+"],
   furnishing: ["Furnished", "Semi-Furnished", "Unfurnished"],
   postedBy: ["Owner", "Agent", "Builder"],
   budgetMinLac: 0,
@@ -17,13 +17,10 @@ const DEFAULT_FILTERS: PropertyFilters = {
 
 const PER_PAGE = 9;
 
-/**
- * Centralizes filter state + derived (filtered/sorted/paginated) results.
- * Keeping this logic in one hook means FilterSidebar and the results
- * grid both read/write the same source of truth without prop-drilling
- * every individual filter field.
- */
-export function usePropertyFilters(allProperties: Property[], initial?: Partial<PropertyFilters>) {
+export function usePropertyFilters(
+  allProperties: Property[],
+  initial?: Partial<PropertyFilters>
+) {
   const [filters, setFilters] = useState<PropertyFilters>({
     ...DEFAULT_FILTERS,
     ...initial,
@@ -31,7 +28,10 @@ export function usePropertyFilters(allProperties: Property[], initial?: Partial<
   const [sort, setSort] = useState<SortOption>("relevance");
   const [page, setPage] = useState(1);
 
-  function updateFilter<K extends keyof PropertyFilters>(key: K, value: PropertyFilters[K]) {
+  function updateFilter<K extends keyof PropertyFilters>(
+    key: K,
+    value: PropertyFilters[K]
+  ) {
     setFilters((f) => ({ ...f, [key]: value }));
     setPage(1);
   }
@@ -44,44 +44,39 @@ export function usePropertyFilters(allProperties: Property[], initial?: Partial<
 
   const filtered = useMemo(() => {
     let results = allProperties.filter((p) => {
-      if (filters.cities.length && !filters.cities.includes(p.city)) return false;
-      if (filters.types.length && !filters.types.includes(p.type)) return false;
-
+      if (filters.cities.length && !filters.cities.includes(p.city))
+        return false;
+      if (filters.types.length && !filters.types.includes(p.type))
+        return false;
       if (filters.bhk.length && p.bhk > 0) {
-        const bhkMatch = filters.bhk.some((v) =>
+        const match = filters.bhk.some((v) =>
           v === "4+" ? p.bhk > 4 : p.bhk === parseInt(v, 10)
         );
-        if (!bhkMatch) return false;
+        if (!match) return false;
       }
-
-      if (filters.furnishing.length && !filters.furnishing.includes(p.furnishing)) return false;
-      if (filters.postedBy.length && !filters.postedBy.includes(p.postedBy)) return false;
-      if (filters.listingType && p.listingType !== filters.listingType) return false;
-
-      const minVal = filters.budgetMinLac * 100000;
-      const maxVal = filters.budgetMaxLac >= 500 ? Infinity : filters.budgetMaxLac * 100000;
-      if (p.listingType === "buy" && (p.price < minVal || p.price > maxVal)) return false;
-
+      if (
+        filters.furnishing.length &&
+        !filters.furnishing.includes(p.furnishing)
+      )
+        return false;
+      if (filters.postedBy.length && !filters.postedBy.includes(p.postedBy))
+        return false;
+      if (filters.listingType && p.listingType !== filters.listingType)
+        return false;
       if (filters.search.trim()) {
-        const haystack = `${p.title} ${p.locality} ${p.city} ${p.society}`.toLowerCase();
-        if (!haystack.includes(filters.search.toLowerCase().trim())) return false;
+        const hay = `${p.title} ${p.locality} ${p.city} ${p.society}`.toLowerCase();
+        if (!hay.includes(filters.search.toLowerCase().trim())) return false;
       }
-
       return true;
     });
 
     results = [...results].sort((a, b) => {
       switch (sort) {
-        case "price-asc":
-          return a.price - b.price;
-        case "price-desc":
-          return b.price - a.price;
-        case "area-desc":
-          return b.area - a.area;
-        case "newest":
-          return a.daysAgo - b.daysAgo;
-        default:
-          return (b.featured ? 1 : 0) - (a.featured ? 1 : 0);
+        case "price-asc": return a.price - b.price;
+        case "price-desc": return b.price - a.price;
+        case "area-desc": return b.area - a.area;
+        case "newest": return a.daysAgo - b.daysAgo;
+        default: return (b.featured ? 1 : 0) - (a.featured ? 1 : 0);
       }
     });
 
@@ -100,7 +95,6 @@ export function usePropertyFilters(allProperties: Property[], initial?: Partial<
     page,
     setPage,
     totalPages,
-    filtered,
     paginated,
     totalCount: filtered.length,
   };
