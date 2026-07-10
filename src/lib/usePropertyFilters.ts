@@ -6,9 +6,9 @@ import { Property, PropertyFilters, SortOption } from "@/types/property";
 const DEFAULT_FILTERS: PropertyFilters = {
   cities: [],
   types: [],
-  bhk: ["1", "2", "3", "4", "4+"],
-  furnishing: ["Furnished", "Semi-Furnished", "Unfurnished"],
-  postedBy: ["Owner", "Agent", "Builder"],
+  bhk: [],
+  furnishing: [],
+  postedBy: [],
   budgetMinLac: 0,
   budgetMaxLac: 500,
   listingType: null,
@@ -44,6 +44,7 @@ export function usePropertyFilters(
 
   const filtered = useMemo(() => {
     let results = allProperties.filter((p) => {
+      // empty array = no filter applied (show all)
       if (filters.cities.length && !filters.cities.includes(p.city))
         return false;
       if (filters.types.length && !filters.types.includes(p.type))
@@ -54,10 +55,7 @@ export function usePropertyFilters(
         );
         if (!match) return false;
       }
-      if (
-        filters.furnishing.length &&
-        !filters.furnishing.includes(p.furnishing)
-      )
+      if (filters.furnishing.length && !filters.furnishing.includes(p.furnishing))
         return false;
       if (filters.postedBy.length && !filters.postedBy.includes(p.postedBy))
         return false;
