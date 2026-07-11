@@ -453,7 +453,7 @@ function PropertyCard({ property: p, layout }: { property: Property; layout: "gr
   const isRow = layout === "list";
 
   return (
-    <div className={`bg-white border border-gray-200 rounded-xl overflow-hidden group cursor-pointer transition-all hover:shadow-lg ${
+    <Link href={`/property/${p.id}`} className={`bg-white border border-gray-200 rounded-xl overflow-hidden group cursor-pointer transition-all hover:shadow-lg ${
       isRow ? "flex flex-row" : "flex flex-col hover:-translate-y-0.5"
     }`}>
       {/* Image */}
@@ -545,7 +545,7 @@ function PropertyCard({ property: p, layout }: { property: Property; layout: "gr
           </button>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 
