@@ -5,6 +5,11 @@ import { useRouter } from 'next/navigation';
 import Head from 'next/head';
 import Link from 'next/link';
 import styles from '../../../styles/auth.module.css';
+import {
+  IconHome,
+  IconMenu,
+  IconClose,
+} from "@/components/icons";
 
 export default function SignUp() {
   const router = useRouter();
@@ -93,7 +98,14 @@ export default function SignUp() {
             <div className="w-full lg:w-1/2 flex items-center justify-center p-6">
               <div className={styles.formWrapper}>
                 <div className={styles.logoSection}>
-                  <h2 className={styles.logo}>🏠 RealEstate</h2>
+                  <Link href="/" className="flex items-center gap-2 flex-shrink-0">
+          <span className="w-9 h-9 bg-primary rounded-[9px] flex items-center justify-center text-white text-base">
+            <IconHome />
+          </span>
+          <span className="text-lg font-bold text-ink tracking-tight">
+            Nest<span className="text-primary">Finder</span>
+          </span>
+        </Link>
                 </div>
 
                 <h1 className={styles.heading}>Create Account</h1>
