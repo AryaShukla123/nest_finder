@@ -1,0 +1,180 @@
+.authContainer {
+  min-height: 100vh;
+  height: 100%;
+}
+
+.leftPanel {
+  /* High-quality modern luxury home image from Unsplash */
+  background-image: url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.leftPanelSignup {
+  background: linear-gradient(135deg, #dbeafe 0%, #93c5fd 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.patternOverlay {
+  position: absolute;
+  inset: 0;
+  /* Smooth gradient overlay that transitions from a translucent blue to a deeper navy */
+  background: linear-gradient(
+    135deg, 
+    rgba(37, 99, 235, 0.45) 0%, 
+    rgba(23, 37, 84, 0.85) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4rem;
+}
+
+.welcomeTitle {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.welcomeText {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.1rem;
+  max-width: 400px;
+}
+
+.formWrapper {
+  width: 100%;
+  max-width: 440px;
+  padding: 2rem;
+}
+
+.logoSection {
+  margin-bottom: 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e40af;
+  margin: 0;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.subheading {
+  color: #6b7280;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.formLabel {
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.formControl {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.formControl:focus {
+  border-color: #1e40af;
+  box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+}
+
+.forgotLink {
+  color: #f97316;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.forgotLink:hover {
+  color: #ea580c;
+  text-decoration: underline;
+}
+
+.btnPrimary {
+  background-color: #1e40af;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.875rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  margin-top: 0.5rem;
+}
+
+.btnPrimary:hover:not(:disabled) {
+  background-color: #1e3a8a;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3);
+}
+
+.btnPrimary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btnSecondary {
+  background-color: #f97316;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.875rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  margin-top: 0.5rem;
+}
+
+.btnSecondary:hover:not(:disabled) {
+  background-color: #ea580c;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
+}
+
+.btnSecondary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.switchText {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.switchText a {
+  color: #1e40af;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.switchText a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .formWrapper {
+    max-width: 500px;
+    padding: 3rem 2rem;
+  }
+}

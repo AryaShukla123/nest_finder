@@ -72,9 +72,12 @@ export default function Navbar({ activeLabel = "Buy" }: NavbarProps) {
               Free
             </span>
           </button>
-          <button className="text-sm font-semibold text-white bg-primary rounded-lg px-5 py-2 hover:bg-primary-dark transition-colors active:scale-[0.97]">
-            Sign In
-          </button>
+          <Link 
+    href="/auth/signin" 
+    className="text-sm font-semibold text-white bg-primary rounded-lg px-5 py-2 hover:bg-primary-dark transition-colors active:scale-[0.97] inline-block text-center"
+  >
+    Sign In
+  </Link>
         </div>
 
         <button

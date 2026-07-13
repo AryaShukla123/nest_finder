@@ -146,9 +146,12 @@ function ListingsInner() {
               Post Property
               <span className="text-[10px] font-bold bg-[#FF6B35] text-white px-1.5 py-0.5 rounded">Free</span>
             </button>
-            <button className="text-sm font-semibold text-white bg-[#1B4FFF] rounded-lg px-5 py-2 hover:bg-[#1440CC] transition-colors">
-              Sign In
-            </button>
+            <Link 
+    href="/auth/signin" 
+    className="text-sm font-semibold text-white bg-primary rounded-lg px-5 py-2 hover:bg-primary-dark transition-colors active:scale-[0.97] inline-block text-center"
+  >
+    Sign In
+  </Link>
           </div>
         </div>
       </nav>
