@@ -26,13 +26,16 @@ export default function SignIn() {
     setLoading(true);
 
     try {
-      const response = await fetch('http://localhost:8000/api/auth/login', {
-        method: 'POST',
+      const response = await fetch("http://127.0.0.1:8000/api/auth/login", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+       "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+    email: formData.email,
+    password: formData.password,
+  }),
+});
 
       const data = await response.json();
 
@@ -45,7 +48,7 @@ export default function SignIn() {
       localStorage.setItem('user', JSON.stringify(data.user));
 
       // Redirect to dashboard or home
-      router.push('/dashboard');
+      router.push('/');
     } catch (err: any) {
       setError(err.message);
     } finally {
