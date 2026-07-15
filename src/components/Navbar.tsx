@@ -15,6 +15,7 @@ const NAV_LINKS = [
   { label: "Commercial", href: "#" },
   { label: "Plot", href: "#" },
   { label: "Agents", href: "#" },
+  { label: "Analytics", href: "/analytics" },
 ];
 
 interface NavbarProps {

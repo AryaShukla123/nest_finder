@@ -1,0 +1,608 @@
+[
+  {
+    "sector": "Gwal Pahari",
+    "avg_price_per_sqft": 9586.0,
+    "avg_price": 3.19,
+    "listing_count": 18
+  },
+  {
+    "sector": "Manesar",
+    "avg_price_per_sqft": 4608.0,
+    "avg_price": 0.96,
+    "listing_count": 31
+  },
+  {
+    "sector": "Sector 1",
+    "avg_price_per_sqft": 8250.0,
+    "avg_price": 1.86,
+    "listing_count": 6
+  },
+  {
+    "sector": "Sector 10",
+    "avg_price_per_sqft": 11867.0,
+    "avg_price": 2.09,
+    "listing_count": 7
+  },
+  {
+    "sector": "Sector 102",
+    "avg_price_per_sqft": 10604.0,
+    "avg_price": 1.7,
+    "listing_count": 107
+  },
+  {
+    "sector": "Sector 103",
+    "avg_price_per_sqft": 7446.0,
+    "avg_price": 1.5,
+    "listing_count": 42
+  },
+  {
+    "sector": "Sector 104",
+    "avg_price_per_sqft": 8874.0,
+    "avg_price": 1.62,
+    "listing_count": 67
+  },
+  {
+    "sector": "Sector 105",
+    "avg_price_per_sqft": 10169.0,
+    "avg_price": 1.2,
+    "listing_count": 20
+  },
+  {
+    "sector": "Sector 106",
+    "avg_price_per_sqft": 8591.0,
+    "avg_price": 1.55,
+    "listing_count": 38
+  },
+  {
+    "sector": "Sector 107",
+    "avg_price_per_sqft": 6644.0,
+    "avg_price": 0.78,
+    "listing_count": 59
+  },
+  {
+    "sector": "Sector 108",
+    "avg_price_per_sqft": 10031.0,
+    "avg_price": 2.0,
+    "listing_count": 58
+  },
+  {
+    "sector": "Sector 109",
+    "avg_price_per_sqft": 12635.0,
+    "avg_price": 3.99,
+    "listing_count": 86
+  },
+  {
+    "sector": "Sector 11",
+    "avg_price_per_sqft": 9227.0,
+    "avg_price": 1.45,
+    "listing_count": 16
+  },
+  {
+    "sector": "Sector 110",
+    "avg_price_per_sqft": 8882.0,
+    "avg_price": 2.51,
+    "listing_count": 23
+  },
+  {
+    "sector": "Sector 111",
+    "avg_price_per_sqft": 11693.0,
+    "avg_price": 2.9,
+    "listing_count": 22
+  },
+  {
+    "sector": "Sector 112",
+    "avg_price_per_sqft": 12367.0,
+    "avg_price": 4.51,
+    "listing_count": 23
+  },
+  {
+    "sector": "Sector 113",
+    "avg_price_per_sqft": 12516.0,
+    "avg_price": 2.47,
+    "listing_count": 43
+  },
+  {
+    "sector": "Sector 12",
+    "avg_price_per_sqft": 9942.0,
+    "avg_price": 1.64,
+    "listing_count": 32
+  },
+  {
+    "sector": "Sector 13",
+    "avg_price_per_sqft": 9016.0,
+    "avg_price": 2.44,
+    "listing_count": 9
+  },
+  {
+    "sector": "Sector 14",
+    "avg_price_per_sqft": 17151.0,
+    "avg_price": 4.59,
+    "listing_count": 18
+  },
+  {
+    "sector": "Sector 15",
+    "avg_price_per_sqft": 11916.0,
+    "avg_price": 2.72,
+    "listing_count": 6
+  },
+  {
+    "sector": "Sector 17",
+    "avg_price_per_sqft": 17705.0,
+    "avg_price": 4.69,
+    "listing_count": 10
+  },
+  {
+    "sector": "Sector 2",
+    "avg_price_per_sqft": 11356.0,
+    "avg_price": 2.44,
+    "listing_count": 61
+  },
+  {
+    "sector": "Sector 21",
+    "avg_price_per_sqft": 7642.0,
+    "avg_price": 1.03,
+    "listing_count": 6
+  },
+  {
+    "sector": "Sector 22",
+    "avg_price_per_sqft": 16245.0,
+    "avg_price": 3.43,
+    "listing_count": 20
+  },
+  {
+    "sector": "Sector 23",
+    "avg_price_per_sqft": 13456.0,
+    "avg_price": 3.34,
+    "listing_count": 13
+  },
+  {
+    "sector": "Sector 24",
+    "avg_price_per_sqft": 17628.0,
+    "avg_price": 4.78,
+    "listing_count": 20
+  },
+  {
+    "sector": "Sector 25",
+    "avg_price_per_sqft": 30650.0,
+    "avg_price": 8.66,
+    "listing_count": 37
+  },
+  {
+    "sector": "Sector 26",
+    "avg_price_per_sqft": 31882.0,
+    "avg_price": 11.81,
+    "listing_count": 40
+  },
+  {
+    "sector": "Sector 27",
+    "avg_price_per_sqft": 28890.0,
+    "avg_price": 6.12,
+    "listing_count": 2
+  },
+  {
+    "sector": "Sector 28",
+    "avg_price_per_sqft": 18739.0,
+    "avg_price": 4.62,
+    "listing_count": 39
+  },
+  {
+    "sector": "Sector 3",
+    "avg_price_per_sqft": 8134.0,
+    "avg_price": 0.97,
+    "listing_count": 24
+  },
+  {
+    "sector": "Sector 30",
+    "avg_price_per_sqft": 11255.0,
+    "avg_price": 1.57,
+    "listing_count": 5
+  },
+  {
+    "sector": "Sector 31",
+    "avg_price_per_sqft": 22197.0,
+    "avg_price": 3.53,
+    "listing_count": 10
+  },
+  {
+    "sector": "Sector 33",
+    "avg_price_per_sqft": 12166.0,
+    "avg_price": 2.75,
+    "listing_count": 67
+  },
+  {
+    "sector": "Sector 36",
+    "avg_price_per_sqft": 9429.0,
+    "avg_price": 1.05,
+    "listing_count": 22
+  },
+  {
+    "sector": "Sector 37",
+    "avg_price_per_sqft": 6033.0,
+    "avg_price": 0.97,
+    "listing_count": 52
+  },
+  {
+    "sector": "Sector 37D",
+    "avg_price_per_sqft": 8127.0,
+    "avg_price": 1.27,
+    "listing_count": 63
+  },
+  {
+    "sector": "Sector 38",
+    "avg_price_per_sqft": 22356.0,
+    "avg_price": 3.89,
+    "listing_count": 10
+  },
+  {
+    "sector": "Sector 39",
+    "avg_price_per_sqft": 13861.0,
+    "avg_price": 3.62,
+    "listing_count": 11
+  },
+  {
+    "sector": "Sector 4",
+    "avg_price_per_sqft": 9137.0,
+    "avg_price": 1.17,
+    "listing_count": 45
+  },
+  {
+    "sector": "Sector 40",
+    "avg_price_per_sqft": 19005.0,
+    "avg_price": 3.15,
+    "listing_count": 5
+  },
+  {
+    "sector": "Sector 41",
+    "avg_price_per_sqft": 24011.0,
+    "avg_price": 6.14,
+    "listing_count": 11
+  },
+  {
+    "sector": "Sector 43",
+    "avg_price_per_sqft": 21126.0,
+    "avg_price": 5.86,
+    "listing_count": 58
+  },
+  {
+    "sector": "Sector 45",
+    "avg_price_per_sqft": 25526.0,
+    "avg_price": 8.5,
+    "listing_count": 8
+  },
+  {
+    "sector": "Sector 46",
+    "avg_price_per_sqft": 19909.0,
+    "avg_price": 3.8,
+    "listing_count": 11
+  },
+  {
+    "sector": "Sector 47",
+    "avg_price_per_sqft": 14606.0,
+    "avg_price": 2.95,
+    "listing_count": 16
+  },
+  {
+    "sector": "Sector 48",
+    "avg_price_per_sqft": 18247.0,
+    "avg_price": 6.08,
+    "listing_count": 55
+  },
+  {
+    "sector": "Sector 49",
+    "avg_price_per_sqft": 13810.0,
+    "avg_price": 3.07,
+    "listing_count": 45
+  },
+  {
+    "sector": "Sector 5",
+    "avg_price_per_sqft": 7555.0,
+    "avg_price": 1.07,
+    "listing_count": 21
+  },
+  {
+    "sector": "Sector 50",
+    "avg_price_per_sqft": 22965.0,
+    "avg_price": 6.74,
+    "listing_count": 61
+  },
+  {
+    "sector": "Sector 51",
+    "avg_price_per_sqft": 7032.0,
+    "avg_price": 1.56,
+    "listing_count": 7
+  },
+  {
+    "sector": "Sector 52",
+    "avg_price_per_sqft": 11036.0,
+    "avg_price": 2.71,
+    "listing_count": 14
+  },
+  {
+    "sector": "Sector 53",
+    "avg_price_per_sqft": 20507.0,
+    "avg_price": 5.78,
+    "listing_count": 14
+  },
+  {
+    "sector": "Sector 54",
+    "avg_price_per_sqft": 19324.0,
+    "avg_price": 5.33,
+    "listing_count": 26
+  },
+  {
+    "sector": "Sector 55",
+    "avg_price_per_sqft": 20680.0,
+    "avg_price": 3.11,
+    "listing_count": 10
+  },
+  {
+    "sector": "Sector 56",
+    "avg_price_per_sqft": 10930.0,
+    "avg_price": 2.07,
+    "listing_count": 53
+  },
+  {
+    "sector": "Sector 57",
+    "avg_price_per_sqft": 19685.0,
+    "avg_price": 4.67,
+    "listing_count": 23
+  },
+  {
+    "sector": "Sector 58",
+    "avg_price_per_sqft": 17148.0,
+    "avg_price": 3.3,
+    "listing_count": 7
+  },
+  {
+    "sector": "Sector 59",
+    "avg_price_per_sqft": 17476.0,
+    "avg_price": 4.88,
+    "listing_count": 8
+  },
+  {
+    "sector": "Sector 6",
+    "avg_price_per_sqft": 8099.0,
+    "avg_price": 0.69,
+    "listing_count": 11
+  },
+  {
+    "sector": "Sector 60",
+    "avg_price_per_sqft": 15328.0,
+    "avg_price": 3.99,
+    "listing_count": 15
+  },
+  {
+    "sector": "Sector 61",
+    "avg_price_per_sqft": 14623.0,
+    "avg_price": 2.09,
+    "listing_count": 41
+  },
+  {
+    "sector": "Sector 62",
+    "avg_price_per_sqft": 17384.0,
+    "avg_price": 5.66,
+    "listing_count": 16
+  },
+  {
+    "sector": "Sector 63",
+    "avg_price_per_sqft": 16931.0,
+    "avg_price": 4.66,
+    "listing_count": 14
+  },
+  {
+    "sector": "Sector 63A",
+    "avg_price_per_sqft": 16441.0,
+    "avg_price": 2.75,
+    "listing_count": 15
+  },
+  {
+    "sector": "Sector 65",
+    "avg_price_per_sqft": 15972.0,
+    "avg_price": 3.31,
+    "listing_count": 87
+  },
+  {
+    "sector": "Sector 66",
+    "avg_price_per_sqft": 19693.0,
+    "avg_price": 5.64,
+    "listing_count": 41
+  },
+  {
+    "sector": "Sector 67",
+    "avg_price_per_sqft": 13338.0,
+    "avg_price": 3.12,
+    "listing_count": 47
+  },
+  {
+    "sector": "Sector 67A",
+    "avg_price_per_sqft": 10050.0,
+    "avg_price": 1.42,
+    "listing_count": 21
+  },
+  {
+    "sector": "Sector 68",
+    "avg_price_per_sqft": 8915.0,
+    "avg_price": 1.25,
+    "listing_count": 30
+  },
+  {
+    "sector": "Sector 69",
+    "avg_price_per_sqft": 9225.0,
+    "avg_price": 1.57,
+    "listing_count": 93
+  },
+  {
+    "sector": "Sector 7",
+    "avg_price_per_sqft": 11288.0,
+    "avg_price": 1.74,
+    "listing_count": 35
+  },
+  {
+    "sector": "Sector 70",
+    "avg_price_per_sqft": 8741.0,
+    "avg_price": 1.63,
+    "listing_count": 49
+  },
+  {
+    "sector": "Sector 71",
+    "avg_price_per_sqft": 7717.0,
+    "avg_price": 0.95,
+    "listing_count": 27
+  },
+  {
+    "sector": "Sector 72",
+    "avg_price_per_sqft": 12789.0,
+    "avg_price": 4.16,
+    "listing_count": 29
+  },
+  {
+    "sector": "Sector 73",
+    "avg_price_per_sqft": 16117.0,
+    "avg_price": 6.3,
+    "listing_count": 3
+  },
+  {
+    "sector": "Sector 74",
+    "avg_price_per_sqft": 11791.0,
+    "avg_price": 1.77,
+    "listing_count": 18
+  },
+  {
+    "sector": "Sector 76",
+    "avg_price_per_sqft": 9250.0,
+    "avg_price": 1.68,
+    "listing_count": 15
+  },
+  {
+    "sector": "Sector 77",
+    "avg_price_per_sqft": 7731.0,
+    "avg_price": 1.33,
+    "listing_count": 27
+  },
+  {
+    "sector": "Sector 78",
+    "avg_price_per_sqft": 6397.0,
+    "avg_price": 1.19,
+    "listing_count": 16
+  },
+  {
+    "sector": "Sector 79",
+    "avg_price_per_sqft": 8507.0,
+    "avg_price": 1.38,
+    "listing_count": 76
+  },
+  {
+    "sector": "Sector 8",
+    "avg_price_per_sqft": 8570.0,
+    "avg_price": 0.75,
+    "listing_count": 7
+  },
+  {
+    "sector": "Sector 80",
+    "avg_price_per_sqft": 7498.0,
+    "avg_price": 1.27,
+    "listing_count": 5
+  },
+  {
+    "sector": "Sector 81",
+    "avg_price_per_sqft": 9318.0,
+    "avg_price": 1.92,
+    "listing_count": 87
+  },
+  {
+    "sector": "Sector 82",
+    "avg_price_per_sqft": 9242.0,
+    "avg_price": 2.1,
+    "listing_count": 41
+  },
+  {
+    "sector": "Sector 82A",
+    "avg_price_per_sqft": 10121.0,
+    "avg_price": 2.3,
+    "listing_count": 19
+  },
+  {
+    "sector": "Sector 83",
+    "avg_price_per_sqft": 7637.0,
+    "avg_price": 1.26,
+    "listing_count": 68
+  },
+  {
+    "sector": "Sector 84",
+    "avg_price_per_sqft": 6375.0,
+    "avg_price": 0.97,
+    "listing_count": 49
+  },
+  {
+    "sector": "Sector 85",
+    "avg_price_per_sqft": 7934.0,
+    "avg_price": 1.5,
+    "listing_count": 108
+  },
+  {
+    "sector": "Sector 86",
+    "avg_price_per_sqft": 7601.0,
+    "avg_price": 1.2,
+    "listing_count": 62
+  },
+  {
+    "sector": "Sector 88",
+    "avg_price_per_sqft": 7441.0,
+    "avg_price": 0.98,
+    "listing_count": 3
+  },
+  {
+    "sector": "Sector 88A",
+    "avg_price_per_sqft": 8955.0,
+    "avg_price": 1.33,
+    "listing_count": 22
+  },
+  {
+    "sector": "Sector 89",
+    "avg_price_per_sqft": 8564.0,
+    "avg_price": 1.1,
+    "listing_count": 57
+  },
+  {
+    "sector": "Sector 9",
+    "avg_price_per_sqft": 8986.0,
+    "avg_price": 1.47,
+    "listing_count": 22
+  },
+  {
+    "sector": "Sector 90",
+    "avg_price_per_sqft": 6384.0,
+    "avg_price": 1.2,
+    "listing_count": 89
+  },
+  {
+    "sector": "Sector 91",
+    "avg_price_per_sqft": 7586.0,
+    "avg_price": 1.65,
+    "listing_count": 17
+  },
+  {
+    "sector": "Sector 92",
+    "avg_price_per_sqft": 5928.0,
+    "avg_price": 0.93,
+    "listing_count": 100
+  },
+  {
+    "sector": "Sector 93",
+    "avg_price_per_sqft": 8010.0,
+    "avg_price": 0.85,
+    "listing_count": 9
+  },
+  {
+    "sector": "Sector 95",
+    "avg_price_per_sqft": 5603.0,
+    "avg_price": 0.48,
+    "listing_count": 55
+  },
+  {
+    "sector": "Sector 99",
+    "avg_price_per_sqft": 6412.0,
+    "avg_price": 1.01,
+    "listing_count": 42
+  }
+]

@@ -6,6 +6,7 @@ import HowItWorks from "@/components/HowItWorks";
 import NewProjects from "@/components/NewProjects";
 import Testimonials from "@/components/Testimonials";
 import { ServicesBanner, CtaStrip } from "@/components/ServicesAndCta";
+import AnalyticsPromo from "@/components/AnalyticsPromo";
 import Footer from "@/components/Footer";
 
 export default function HomePage() {
@@ -15,6 +16,7 @@ export default function HomePage() {
       <Hero />
       <FeaturedProperties />
       <CityGrid />
+      <AnalyticsPromo />
       <HowItWorks />
       <NewProjects />
       <Testimonials />
