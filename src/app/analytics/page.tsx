@@ -10,16 +10,16 @@ const MODULES = [
     live: true,
   },
   {
-    href: "#",
+    href: "/analytics/price-distribution",
     title: "Price Distribution",
     description: "Boxplot view of price spread across sectors.",
-    live: false,
+    live: true,
   },
   {
-    href: "#",
+    href: "/analytics/price-vs-area",
     title: "Price vs. Built-up Area",
     description: "Scatter plot of price against square footage, filterable by sector.",
-    live: false,
+    live: true,
   },
   {
     href: "#",
