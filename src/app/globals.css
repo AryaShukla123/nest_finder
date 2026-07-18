@@ -48,3 +48,12 @@ input[type="range"].range-slider::-moz-range-thumb {
   background: #e5e7eb;
   border-radius: 4px;
 }
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}

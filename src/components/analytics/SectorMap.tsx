@@ -4,7 +4,6 @@ import { useEffect, useMemo, useState } from "react";
 import { MapContainer, TileLayer, GeoJSON, Popup } from "react-leaflet";
 import type { Layer, StyleFunction, PathOptions } from "leaflet";
 import type { Feature, FeatureCollection, Geometry } from "geojson";
-// @ts-ignore
 import "leaflet/dist/leaflet.css";
 
 interface SectorStat {
