@@ -16,6 +16,7 @@ const NAV_LINKS = [
   { label: "Plot", href: "#" },
   { label: "Agents", href: "#" },
   { label: "Analytics", href: "/analytics" },
+  { label: "Price Prediction", href: "/predict" },
 ];
 
 interface NavbarProps {
