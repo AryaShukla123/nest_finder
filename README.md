@@ -11,13 +11,27 @@ NestFinder is a secure, modern real estate web ecosystem built to optimize how u
 ## Example Screenshot
 
 ### Main Interface & Property Hub
-![NestFinder Landing Page UI](https://github.com/user-attachments/assets/2391ffc9-fc67-41eb-8398-29d6a54cdc36
+![NestFinder Landing Page UI](https://github.com/user-attachments/assets/d30cf3f4-48f4-4466-8a6d-746724f2aa11
 )
-![NestFinder properties listings](https://github.com/user-attachments/assets/a80dee9d-0639-4d11-9d2e-629d5b9f647e
+![NestFinder properties listings](https://github.com/user-attachments/assets/e55f876a-051e-4449-a548-ee34efa05bf8
 )
 ![NestFinder property details](https://github.com/user-attachments/assets/86573221-5dcd-4280-9329-7b7188b8b763
 )
 ![NestFinder signup/signin page](https://github.com/user-attachments/assets/d2a4416b-0083-4aa8-a0d3-648ce611f9f5
+)
+![NestFinder insights module](https://github.com/user-attachments/assets/7fbe78e2-cbbb-47cc-9e0d-eed132b24070
+)
+![NestFinder analytics module](https://github.com/user-attachments/assets/a49dd6ed-1316-4a87-8524-aca625cdc8d7
+)
+![NestFinder spatial analysis module](https://github.com/user-attachments/assets/6b67cba7-3038-46c2-a339-530ca671fa9e
+)
+![NestFinder price distribution module](https://github.com/user-attachments/assets/f53e1269-5245-4e57-befb-534113a6d9fb
+)
+![NestFinder price vs built-up area module](https://github.com/user-attachments/assets/394fd77d-ef99-44d7-95ca-d05fc897676d
+)
+![NestFinder room configuration module](https://github.com/user-attachments/assets/1e74a183-9450-46c4-9933-5fd61d463e7e
+)
+![NestFinder price prediction module](https://github.com/user-attachments/assets/089bebf0-de2b-409f-8b82-f788c646c01a
 )
 
 ---
