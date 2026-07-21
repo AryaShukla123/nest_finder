@@ -1,0 +1,267 @@
+{
+  "meta": {
+    "n_listings": 3329,
+    "r_squared": 0.862,
+    "baseline_sector": "Sector 85",
+    "method": "Log-linear hedonic regression (OLS) on 3,329 Gurugram listings, controlling for sector fixed effects."
+  },
+  "cards": [
+    {
+      "id": "bhk",
+      "category": "Layout",
+      "title": "Adding a bedroom (BHK)",
+      "description": "Price change from moving up one BHK tier, holding built-up area, sector, and everything else fixed.",
+      "type": "steps",
+      "baseline": "1 BHK",
+      "items": [
+        {
+          "label": "1 BHK \u2192 2 BHK",
+          "pct": 19.05,
+          "significant": true
+        },
+        {
+          "label": "2 BHK \u2192 3 BHK",
+          "pct": 23.06,
+          "significant": true
+        },
+        {
+          "label": "3 BHK \u2192 4 BHK",
+          "pct": 15.87,
+          "significant": true
+        },
+        {
+          "label": "4 BHK \u2192 5+ BHK",
+          "pct": 8.89,
+          "significant": true
+        }
+      ]
+    },
+    {
+      "id": "area",
+      "category": "Size",
+      "title": "Built-up area",
+      "description": "Every home-buyer question starts here: how much does extra space actually cost?",
+      "type": "elasticity",
+      "elasticity": 0.415,
+      "items": [
+        {
+          "label": "+100 sqft",
+          "pct": 2.72,
+          "significant": true
+        },
+        {
+          "label": "+300 sqft",
+          "pct": 7.87,
+          "significant": true
+        }
+      ]
+    },
+    {
+      "id": "bathroom_balcony",
+      "category": "Layout",
+      "title": "Bathrooms & balconies",
+      "description": "Price change per additional bathroom or balcony, other features held constant.",
+      "type": "binary",
+      "items": [
+        {
+          "label": "Each additional bathroom",
+          "pct": 6.39,
+          "significant": true
+        },
+        {
+          "label": "Each additional balcony",
+          "pct": 4.38,
+          "significant": true
+        }
+      ]
+    },
+    {
+      "id": "furnishing",
+      "category": "Interior",
+      "title": "Furnishing level",
+      "description": "Compared to an unfurnished flat.",
+      "type": "steps",
+      "baseline": "Unfurnished",
+      "items": [
+        {
+          "label": "Semi-Furnished",
+          "pct": -1.32,
+          "significant": false
+        },
+        {
+          "label": "Fully Furnished",
+          "pct": 3.6,
+          "significant": true
+        }
+      ]
+    },
+    {
+      "id": "luxury",
+      "category": "Interior",
+      "title": "Luxury / amenities tier",
+      "description": "Compared to a Basic-tier building.",
+      "type": "steps",
+      "baseline": "Basic",
+      "items": [
+        {
+          "label": "Standard tier",
+          "pct": 2.73,
+          "significant": true
+        },
+        {
+          "label": "Premium tier",
+          "pct": 3.06,
+          "significant": true
+        }
+      ]
+    },
+    {
+      "id": "floor",
+      "category": "Layout",
+      "title": "Floor level",
+      "description": "Compared to a low floor (1st\u20134th).",
+      "type": "steps",
+      "baseline": "Low floor (1-4)",
+      "items": [
+        {
+          "label": "Mid floor (5-15)",
+          "pct": 4.33,
+          "significant": true
+        },
+        {
+          "label": "High floor (16+)",
+          "pct": 17.57,
+          "significant": true
+        }
+      ]
+    },
+    {
+      "id": "age",
+      "category": "Condition",
+      "title": "Age / possession status",
+      "description": "Compared to an older, already-built property.",
+      "type": "steps",
+      "baseline": "Old Property",
+      "items": [
+        {
+          "label": "Moderately Old",
+          "pct": -3.55,
+          "significant": true
+        },
+        {
+          "label": "Relatively New",
+          "pct": 0.61,
+          "significant": false
+        },
+        {
+          "label": "New Property",
+          "pct": 7.3,
+          "significant": true
+        },
+        {
+          "label": "Under Construction",
+          "pct": 12.07,
+          "significant": true
+        }
+      ]
+    },
+    {
+      "id": "property_type",
+      "category": "Layout",
+      "title": "Property type",
+      "description": "Independent house vs. a flat/apartment, other features equal.",
+      "type": "binary",
+      "items": [
+        {
+          "label": "Independent House vs. Flat",
+          "pct": 67.27,
+          "significant": true
+        }
+      ]
+    },
+    {
+      "id": "amenities",
+      "category": "Rooms",
+      "title": "Adding a dedicated room",
+      "description": "The direct answer to \"what does adding a pooja room / study / servant room / store room do to price?\"",
+      "type": "binary",
+      "items": [
+        {
+          "label": "Pooja room",
+          "pct": -0.69,
+          "significant": false
+        },
+        {
+          "label": "Study room",
+          "pct": 6.97,
+          "significant": true
+        },
+        {
+          "label": "Servant room",
+          "pct": 9.04,
+          "significant": true
+        },
+        {
+          "label": "Store room",
+          "pct": 2.73,
+          "significant": true
+        }
+      ]
+    }
+  ],
+  "sector_premium": {
+    "baseline_sector": "Sector 85",
+    "top": [
+      {
+        "sector": "Sector 53",
+        "pct": 147.98
+      },
+      {
+        "sector": "Sector 59",
+        "pct": 142.06
+      },
+      {
+        "sector": "Sector 62",
+        "pct": 127.2
+      },
+      {
+        "sector": "Sector 26",
+        "pct": 123.3
+      },
+      {
+        "sector": "Sector 58",
+        "pct": 115.7
+      },
+      {
+        "sector": "Sector 50",
+        "pct": 98.77
+      }
+    ],
+    "bottom": [
+      {
+        "sector": "Sector 105",
+        "pct": -36.09
+      },
+      {
+        "sector": "Sector 92",
+        "pct": -38.13
+      },
+      {
+        "sector": "Sector 5",
+        "pct": -38.56
+      },
+      {
+        "sector": "Sector 8",
+        "pct": -40.02
+      },
+      {
+        "sector": "Manesar",
+        "pct": -41.03
+      },
+      {
+        "sector": "Sector 95",
+        "pct": -47.25
+      }
+    ]
+  }
+}

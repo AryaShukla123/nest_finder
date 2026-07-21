@@ -12,9 +12,7 @@ const NAV_LINKS = [
   { label: "Buy", href: "/listings" },
   { label: "Rent", href: "/listings" },
   { label: "New Projects", href: "#" },
-  { label: "Commercial", href: "#" },
-  { label: "Plot", href: "#" },
-  { label: "Agents", href: "#" },
+  { label: "Insights", href: "/insights" },
   { label: "Analytics", href: "/analytics" },
   { label: "Price Prediction", href: "/predict" },
 ];
