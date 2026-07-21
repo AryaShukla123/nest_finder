@@ -701,7 +701,7 @@ export const ALL_PROPERTIES: Property[] = [
     rera: true,
     featured: true,
     daysAgo: 2,
-    img: "https://images.unsplash.com/photo-1600047508788-786f3865b65a?w=600&q=80",
+    img: "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     agent: "Sunita Arora",
     agentInitials: "SA",
     amenities: ["Lift", "Parking", "Gym", "Swimming Pool", "Security", "Club House", "Power Backup"],

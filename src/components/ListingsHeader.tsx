@@ -1,13 +1,19 @@
 "use client";
 
+import Link from "next/link";
 import { ListingType } from "@/types/property";
 import { IconSearch } from "@/components/icons";
 
-const TABS: { key: ListingType | "new" | "commercial"; label: string }[] = [
+const TABS: { key: ListingType | "new"; label: string }[] = [
   { key: "buy", label: "Buy" },
   { key: "rent", label: "Rent" },
   { key: "new", label: "New Projects" },
-  { key: "commercial", label: "Commercial" },
+];
+
+const NAV_LINKS = [
+  { href: "/insights", label: "Insights" },
+  { href: "/analytics", label: "Analytics" },
+  { href: "/predict", label: "Price Prediction" },
 ];
 
 interface ListingsHeaderProps {
@@ -26,7 +32,7 @@ export default function ListingsHeader({
   return (
     <div className="bg-ink pt-[calc(68px+20px)] pb-5">
       <div className="max-w-container mx-auto px-6">
-        <div className="flex gap-1 mb-3 overflow-x-auto scrollbar-thin">
+        <div className="flex items-center gap-1 mb-3 overflow-x-auto scrollbar-thin">
           {TABS.map((tab) => (
             <button
               key={tab.key}
@@ -39,6 +45,18 @@ export default function ListingsHeader({
             >
               {tab.label}
             </button>
+          ))}
+
+          <span className="w-px h-4 bg-white/15 mx-1.5 flex-shrink-0" />
+
+          {NAV_LINKS.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="text-[13px] font-semibold rounded-md px-4 py-1.5 transition-colors whitespace-nowrap text-white/55 hover:bg-white/[0.12] hover:text-white"
+            >
+              {link.label}
+            </Link>
           ))}
         </div>
 

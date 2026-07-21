@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { getAllProperties } from "@/data/properties";
 import { usePropertyFilters } from "@/lib/usePropertyFilters";
+import Navbar from "@/components/Navbar";
 import {
   Property,
   PropertyFilters,
@@ -123,57 +124,13 @@ function ListingsInner() {
     <div className="min-h-screen bg-white">
 
       {/* ── Navbar ── */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 shadow-sm">
-        <div className="max-w-[1200px] mx-auto px-6 h-[68px] flex items-center gap-8">
-          <Link href="/" className="flex items-center gap-2 flex-shrink-0">
-            <span className="w-9 h-9 bg-[#1B4FFF] rounded-[9px] flex items-center justify-center text-white">
-              <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5"><path d="M12 2.7 2 11h3v9h6v-6h2v6h6v-9h3L12 2.7z"/></svg>
-            </span>
-            <span className="text-lg font-bold text-gray-900 tracking-tight">
-              Nest<span className="text-[#1B4FFF]">Finder</span>
-            </span>
-          </Link>
-          <div className="hidden lg:flex items-center gap-1 flex-1">
-            {["Buy", "Rent", "New Projects", "Commercial", "Plot", "Agents"].map((l) => (
-              <Link key={l} href={l === "Buy" || l === "Rent" ? "/listings" : "#"}
-                className="text-sm font-medium px-3 py-1.5 rounded-md text-gray-600 hover:bg-blue-50 hover:text-[#1B4FFF] transition-colors">
-                {l}
-              </Link>
-            ))}
-          </div>
-          <div className="hidden lg:flex items-center gap-2.5 ml-auto">
-            <button className="text-sm font-semibold text-[#1B4FFF] border-[1.5px] border-[#1B4FFF] rounded-lg px-4 py-1.5 flex items-center gap-2 hover:bg-blue-50 transition-colors">
-              Post Property
-              <span className="text-[10px] font-bold bg-[#FF6B35] text-white px-1.5 py-0.5 rounded">Free</span>
-            </button>
-            <Link 
-    href="/auth/signin" 
-    className="text-sm font-semibold text-white bg-primary rounded-lg px-5 py-2 hover:bg-primary-dark transition-colors active:scale-[0.97] inline-block text-center"
-  >
-    Sign In
-  </Link>
-          </div>
-        </div>
-      </nav>
+      <Navbar activeLabel="Buy" />
 
-      {/* ── Page header (dark search bar) ── */}
-      <div className="bg-gray-900 pt-[68px]">
+      {/* ── Page header (search bar) ── */}
+      <div className="bg-surface pt-[68px] border-b border-border">
         <div className="max-w-[1200px] mx-auto px-6 py-5">
-          {/* Tabs */}
-          <div className="flex gap-1 mb-4 overflow-x-auto">
-            {["buy", "rent", "new", "commercial"].map((tab) => (
-              <button key={tab} onClick={() => handleTab(tab)}
-                className={`text-[13px] font-semibold rounded-md px-4 py-2 whitespace-nowrap transition-colors capitalize ${
-                  activeTab === tab
-                    ? "bg-[#1B4FFF] text-white"
-                    : "text-white/55 hover:bg-white/10 hover:text-white"
-                }`}>
-                {tab === "buy" ? "Buy" : tab === "rent" ? "Rent" : tab === "new" ? "New Projects" : "Commercial"}
-              </button>
-            ))}
-          </div>
           {/* Search bar */}
-          <div className="flex items-center bg-white rounded-xl overflow-hidden">
+          <div className="flex items-center bg-white rounded-xl overflow-hidden border border-border shadow-sm">
             <span className="px-4 text-gray-400">
               <svg viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} fill="none" className="w-5 h-5"><circle cx="11" cy="11" r="7"/><path strokeLinecap="round" d="M21 21l-4.3-4.3"/></svg>
             </span>
